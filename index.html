@@ -12,16 +12,18 @@
 
 <body>
     <div class="container">
-        <h1>Gioco del dado</h1>
-        <div id="scores" class="hidden">
-            <div>Il tuo numero per giocare è: <span id="userDice"></span></div>
-            <div>Il computer ha realizzato: <span id="randomDice"></span></div>
+        <div class="panel">
+            <h1>Gioco del dado</h1>
+            <div id="scores" class="hidden">
+                <div>Il tuo numero per giocare è: <span id="userDice"></span></div>
+                <div>Il computer ha realizzato: <span id="randomDice"></span></div>
+            </div>
+            <br>
+            <span id="userWinner" class="hidden"> La partita è stata vinta da Te, complimenti!</span>
+            <span id="computerWinner" class="hidden">La partita è stata vinta dal computer, mi dispiace.</span>
+            <span id="tie" class="hidden">La partita è finita in parità</span>
+            <div><a href="">Ritenta</a></div>
         </div>
-        <br>
-        <span id="userWinner" class="hidden"> La partita è stata vinta da Te, complimenti!</span>
-        <span id="computerWinner" class="hidden">La partita è stata vinta dal computer, mi dispiace.</span>
-        <span id="tie" class="hidden">La partita è finita in parità</span>
-        <div><a href="">Ritenta</a></div>
     </div>
     <script src="main.js"></script>
 </body>
