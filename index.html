@@ -7,10 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Gioco del dado</title>
 </head>
 
 <body>
+    <div class="container">
+        <h1>Gioco del dado</h1>
+        <div id="scores" class="hidden">
+            <div>Il tuo numero per giocare è: <span id="userDice"></span></div>
+            <div>Il computer ha realizzato: <span id="randomDice"></span></div>
+        </div>
+        <br>
+        <span id="userWinner" class="hidden"> La partita è stata vinta da Te, complimenti!</span>
+        <span id="computerWinner" class="hidden">La partita è stata vinta dal computer, mi dispiace.</span>
+        <span id="tie" class="hidden">La partita è finita in parità</span>
+        <div><a href="">Ritenta</a></div>
+    </div>
     <script src="main.js"></script>
 </body>
 

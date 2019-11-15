@@ -15,22 +15,29 @@ if (!isNaN(userDice) && (userDice > 0) && (userDice < 7)) {
     max = 6;
     randomDice = Math.floor(Math.random() * (max - min + 1)) + min;
 
-    console.log("computer: ", randomDice);
+    // visualizzo i risultati dei giocatori
+    document.getElementById('scores').setAttribute("class", "show")
     console.log("utente: ", userDice);
+    document.getElementById('userDice').innerHTML = userDice;
+    console.log("computer: ", randomDice);
+    document.getElementById('randomDice').innerHTML = randomDice;
 
     // confronto i numeri e stabilisco chi ha vinto
     if (randomDice > userDice) {
         // ha vinto il computer
         console.log("Il computer vince");
+        document.getElementById('computerWinner').setAttribute("class", "show")
     } else if (randomDice < userDice) {
         // ha vinto l'utente
         console.log("L'utente vince");
+        document.getElementById('userWinner').setAttribute("class", "show")
     } else {
         // la partita è in parità
         console.log("Parità.");
-
+        document.getElementById('tie').setAttribute("class", "show")
     }
 } else {
     // input fuori range
     console.log("input utente non corretto");
+    alert("Non hai inserito un valore corretto (numero intero tra 1 e 6)")
 }
