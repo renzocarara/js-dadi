@@ -4,18 +4,23 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: powderblue
+}
+
 .panel {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     color: slategray;
+    background-color: azure;
     border: 2px solid blue;
     padding: 15px;
     border-radius: 5px;
     margin: 30px auto;
     width: 320px;
     height: 300px;
-    background-color: azure;
 }
 
 .hidden {
@@ -26,8 +31,13 @@
     display: inline-block;
 }
 
+#winner {
+    text-align: center;
+}
+
 #userWinner, #computerWinner, #tie {
-    font-size: 20px;
+    color: black;
+    font-size: 24px;
 }
 
 a {
